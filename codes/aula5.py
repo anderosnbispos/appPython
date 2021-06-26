@@ -1,15 +1,37 @@
-lista = [1, 10, 7, 3]
-animal = ['cachorro','gato','elefante','lobo','arara']
+nota = list()
+for x in range(0, 4):
+    notatemp = int(input('Entre a nota do bimestre {}:'
+                        .format(x+1)))
+    while notatemp > 10:
+        notatemp = int(input('Você digitou um número errado.'
+                             'Entre a nota do bimestre {}:'.format(x+1)))
 
-tupla = (1, 10, 12, 14)
+    nota.append(notatemp)
 
-tanimal = tuple(animal)
-print(animal,type(animal))
-print(tanimal,type(tanimal))
+print('As notas foram: {}'.format(nota))
+media = sum(nota)/4
+print('A média do aluno foi: {}'.format(media))
 
-ltupla = list(tupla)
-print(tupla,type(tupla))
-print(ltupla,type(ltupla))
+#     while nota[x] > 10:
+#         nota[x] = int(input('Você digitou um número errado.'
+#                             'Entre a nota do bimestre {}:'.format(x)))
+#
+# media = sum(nota) / 4
+#
+# print('A média do aluno é {}'.format(media))
+
+# lista = [1, 10, 7, 3]
+# animal = ['cachorro','gato','elefante','lobo','arara']
+#
+# tupla = (1, 10, 12, 14)
+#
+# tanimal = tuple(animal)
+# print(animal,type(animal))
+# print(tanimal,type(tanimal))
+#
+# ltupla = list(tupla)
+# print(tupla,type(tupla))
+# print(ltupla,type(ltupla))
 
 
 # animal[0] = 'macaco'
