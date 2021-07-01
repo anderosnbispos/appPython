@@ -16,13 +16,14 @@ class Calculadora:
     def divisao(self):
         return self.valor_a / self.valor_b
 
-calc = Calculadora(10, 2)
-print('valor a = {}'.format(calc.valor_a))
-print('valor b = {}'.format(calc.valor_b))
-print(calc.soma())
-print(calc.subtracao())
-print(calc.multiplicacao())
-print(calc.divisao())
+if __name__ == '__main__':
+    calc = Calculadora(10, 2)
+    print('valor a = {}'.format(calc.valor_a))
+    print('valor b = {}'.format(calc.valor_b))
+    print(calc.soma())
+    print(calc.subtracao())
+    print(calc.multiplicacao())
+    print(calc.divisao())
 
 
 # def soma(a, b):

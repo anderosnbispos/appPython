@@ -23,24 +23,27 @@ class Televisao:
                 self.canal -= 1
             else:
                 self.canal = 11
+#print abaixo de teste do nome para identificar o chamador do
+# modulo
+# print(__name__)
+if __name__ == '__main__':
+    tv = Televisao()
 
-tv = Televisao()
+    print('Tv está ligada: {}'.format(tv.ligada))
+    tv.power()
+    print('Tv está ligada: {}'.format(tv.ligada))
+    tv.power()
+    print('Tv está ligada: {}'.format(tv.ligada))
 
-print('Tv está ligada: {}'.format(tv.ligada))
-tv.power()
-print('Tv está ligada: {}'.format(tv.ligada))
-tv.power()
-print('Tv está ligada: {}'.format(tv.ligada))
+    tv.power()
+    for i in range(1, 11):
+        print(tv.canal)
+        tv.diminui_canal()
+    tv.power()
+    print('Tv está ligada: {}'.format(tv.ligada))
 
-tv.power()
-for i in range(1, 11):
-    print(tv.canal)
-    tv.diminui_canal()
-tv.power()
-print('Tv está ligada: {}'.format(tv.ligada))
+    res = 0 % 2
+    print(res)
 
-res = 0 % 2
-print(res)
-
-remunera = 30 * 10 * 3
-print(remunera)
+    remunera = 30 * 10 * 3
+    print(remunera)
