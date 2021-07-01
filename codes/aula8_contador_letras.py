@@ -1,4 +1,4 @@
-def Contador_Letras(lista_palavras):
+def contador_letras(lista_palavras):
     contador = []
     for x in lista_palavras:
         quant = len(x)

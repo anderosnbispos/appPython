@@ -1,6 +1,6 @@
 from aula7_tv import Televisao
 from aula7_calc1 import Calculadora
-from aula8_contador_letras import Contador_Letras
+from aula8_contador_letras import contador_letras
 
 if __name__ == '__main__':
     tv = Televisao()
@@ -13,6 +13,6 @@ if __name__ == '__main__':
 
     animais = ['gato','cachorro']
 
-    total_letras = Contador_Letras(animais)
+    total_letras = contador_letras(animais)
     print('O total de letras de cada palavra da lista é '
           '{}'.format(total_letras))
